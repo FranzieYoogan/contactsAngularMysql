@@ -1,0 +1,116 @@
+.centerStyle {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.titleStyle {
+
+    font-weight: 900;
+    font-size: 24px;
+
+}
+
+.divTitle {
+
+    display: flex;
+    margin-top: 3em;
+    gap: 1em;
+
+}
+
+.iconAdd {
+
+    width: 40px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.iconAdd:hover {
+
+    rotate: 20deg;
+   
+
+}
+
+.divInput {
+
+    margin-top: 1em;
+   
+}
+
+.buttonSearch {
+
+    background-color: transparent;
+    border: 2px solid black;
+    margin-left: 1em;
+    transition: 1s;
+}
+
+.buttonSearch:hover, .buttonSearch:active, .buttonSearch:focus {
+
+    scale: 1.1;
+    color: black;
+    box-shadow: none;
+}
+
+.inputSearch {
+
+    border-radius: 5px;
+
+}
+
+.inputSearch:hover, .inputSearch:active, .inputSearch:focus {
+
+    outline: none;
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 0px 2px black;
+
+}
+
+.divItems {
+
+    display: flex;
+    margin-top: 2em;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+
+.iconContact {
+
+    width: 20%;
+    box-shadow: 0px 0px 2px 0px black;
+    border-radius: 90px;
+
+}
+
+.sectionItems {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .iconContact {
+
+        width: 24%;
+
+    }
+
+    .sectionItems {
+
+        display: block;
+    
+    }
+
+  }
+
+  .h1Item {
+
+    box-shadow: 0px 0px 2px 0px black;
+    padding: 5px;
+
+  }

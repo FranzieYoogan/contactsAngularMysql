@@ -1,0 +1,55 @@
+<app-header></app-header>
+
+<main  class="centerStyle">
+
+ 
+        <section style="margin-left: 10%; margin-right: 10%;">
+
+     
+
+        <div class="divTitle">
+
+            <h1 class="titleStyle">Phone Directory</h1> <img (click)="redirect()" class="iconAdd" src="/plus.png" alt="">
+            
+        </div>
+
+        <div>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dignissimos esse aspernatur harum voluptatibus? Debitis totam in eligendi omnis nemo? Ipsum cumque ut soluta consequuntur, numquam illum saepe modi alias?</p>
+
+        </div>
+
+        <form class="divInput">
+
+            <input class="inputSearch" type="text" required> <button type="submit" class="buttonSearch py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Search</button>
+
+        </form>
+
+
+        <section class="sectionItems">
+
+    
+        @for (item of data; track item.PersonID) {
+
+            <div class="divItems">
+        
+               <img class="iconContact" src="{{item.url}}" alt=""> 
+                
+               <div>
+                <h1 class="h1Item">Name: {{item.PersonName}}</h1>
+                <h1 class="h1Item">Mobile: {{item.Mobile}}</h1>
+                <h1 class="h1Item">Email: {{item.Email}}</h1>
+               </div>
+         
+        
+            </div>
+        }
+
+    </section>
+
+    </section>
+
+   
+
+</main>
+
