@@ -1,0 +1,47 @@
+<app-header></app-header>
+
+<main class="allStyle">
+
+    <section class="section1Style">
+
+
+
+    <div>
+        <h1 class="titleStyle">View Contact</h1>
+    </div>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut blanditiis vitae delectus cupiditate dicta corrupti. Assumenda nesciunt similique rem? Delectus odio facilis sint voluptas hic! Laboriosam saepe sequi libero quidem!</p>
+    <div>
+    </div>
+
+
+
+@if(data) {
+
+    <div class="divItems">
+
+        <img class="imgStyle" src="{{data.url}}" alt="">
+
+        <div class="divItem">
+
+        <h1 class="namesStyle">Name: {{data.PersonName}}</h1>
+        <h1 class="namesStyle">Mobile: {{data.Mobile}}</h1>
+        <h1 class="namesStyle">Email: {{data.Email}}</h1>
+
+    </div>
+
+    
+
+    </div>
+
+    
+    <div>
+        <a routerLink = "/" class="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900">Back</a>
+    </div>
+    
+
+}
+
+</section>
+
+</main>

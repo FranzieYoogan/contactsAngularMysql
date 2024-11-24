@@ -51,6 +51,26 @@ margin-top: 0.8em;
 
 }
 
+.divAlert {
+
+    display: none;
+    width: 200px;
+    visibility: hidden;
+    opacity: 0;
+
+}
+
+
+.divError {
+
+     display: none;
+    width: 180px;
+    padding: 10px;
+     visibility: hidden;
+     opacity: 0;
+
+}
+
 @media only screen and (max-width: 600px) {
 
     .inputStyle {

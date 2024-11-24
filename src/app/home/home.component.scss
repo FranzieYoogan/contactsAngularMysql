@@ -75,6 +75,8 @@
     margin-top: 2em;
     gap: 1em;
     margin-bottom: 2em;
+    position: relative;
+    
 }
 
 .iconContact {
@@ -92,13 +94,65 @@
 
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
 
     .iconContact {
 
         width: 24%;
 
     }
+
+    .h1Item {
+
+        box-shadow: 0px 0px 2px 0px black;
+        padding: 5px;
+        width: 260px !important;
+        display: flex;
+        gap: 0.5em;
+      }
+
+      .editStyle {
+
+        width: 20px;
+        position: absolute;
+        left: 100% !important;
+        cursor: pointer !important;
+      }
+
+    .sectionItems {
+
+        display: block;
+    
+    }
+
+  }
+
+
+  @media only screen and (max-width: 554px) {
+
+    .iconContact {
+
+        width: 24%;
+
+    }
+
+    .h1Item {
+
+        box-shadow: 0px 0px 2px 0px black;
+        padding: 5px;
+        width: 260px !important;
+        display: flex;
+        gap: 0.5em;
+        position: relative;
+      }
+
+      .editStyle {
+
+        width: 20px;
+        position: absolute;
+        left: 85% !important;
+        cursor: pointer !important;
+      }
 
     .sectionItems {
 
@@ -112,5 +166,21 @@
 
     box-shadow: 0px 0px 2px 0px black;
     padding: 5px;
+    width: 250px;
+    display: flex;
+    gap: 0.5em;
+  }
+
+  .editStyle {
+
+    width: 20px;
+    position: absolute;
+    left: 63%;
+    cursor: pointer;
+  }
+
+  .editStyle:hover {
+
+    scale: 1.2;
 
   }

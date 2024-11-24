@@ -17,6 +17,21 @@ export class SharedService {
 
   }
 
+  dataSpecific:any
+  getSpecific(id:string): Observable<any> {
+
+    const specific = `${this.url}/${id}`
+    this.dataSpecific = this.http.get(specific)
+    return this.http.get(specific)
+
+  }
+
+  getSearch(): Observable<any> {
+
+    return this.dataSpecific
+
+  }
+
   postData(contactData:any):Observable<any[]> {
 
     return this.http.post<any[]>(this.url, contactData)

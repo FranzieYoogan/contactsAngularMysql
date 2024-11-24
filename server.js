@@ -33,10 +33,10 @@ app.get('/contacts', async (req, res) => {
 });
 
 // 3. Read a single record by ID (GET)
-app.get('/contacts/:id', async (req, res) => {
-  const { id } = req.params;
+app.get('/contacts/:personName', async (req, res) => {
+  const { personName } = req.params; // Descriptive name for the route parameter
   try {
-    const [rows] = await db.execute('SELECT * FROM Contacts WHERE PersonID = ?', [id]);
+    const [rows] = await db.execute('SELECT * FROM Contacts WHERE PersonName = ?', [personName]);
     if (rows.length === 0) {
       return res.status(404).json({ error: 'User not found' });
     }
