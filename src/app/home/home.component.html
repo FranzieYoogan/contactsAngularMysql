@@ -36,9 +36,9 @@
                <img class="iconContact" src="{{item.url}}" alt=""> 
                 
                <div>
-                <h1 class="h1Item">Name: {{item.PersonName}} <img class="editStyle" src="/edit.png" alt=""></h1>
-                <h1 class="h1Item">Mobile: {{item.Mobile}} <img class="editStyle" src="/edit.png" alt=""></h1>
-                <h1 class="h1Item">Email: {{item.Email}} <img class="editStyle" src="/edit.png" alt=""></h1>
+                <h1 class="h1Item">Name: {{item.PersonName}} <img (click)="sendTo(item.PersonName)" class="editStyle" src="/edit.png" alt=""></h1>
+                <h1 class="h1Item">Mobile: {{item.Mobile}}</h1>
+                <h1 class="h1Item">Email: {{item.Email}}</h1>
                </div>
          
         
@@ -52,4 +52,3 @@
    
 
 </main>
-

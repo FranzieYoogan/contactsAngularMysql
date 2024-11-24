@@ -38,4 +38,11 @@ export class SharedService {
 
   }
 
+  putData(id:string,body:any) {
+
+    const data  = `${this.url}/${id}`
+   return this.http.put(data,body)
+
+  }
+
 }

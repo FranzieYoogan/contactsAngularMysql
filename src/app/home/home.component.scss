@@ -55,6 +55,22 @@
     box-shadow: none;
 }
 
+.buttonStyle {
+
+    background-color: transparent;
+    border: 2px solid black;
+    width: 100%;
+    transition: 1s;
+    margin-top: 1em;
+}
+
+.buttonStyle:hover, .buttonStyle:active, .buttonStyle:focus {
+
+    scale: 1.1;
+    color: black;
+    box-shadow: none;
+}
+
 .inputSearch {
 
     border-radius: 5px;
@@ -184,3 +200,44 @@
     scale: 1.2;
 
   }
+
+  .sectionInputs {
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+  }
+
+  .divName {
+
+    position: fixed;
+    bottom: 50%;
+    border: 1px solid black;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    display: none;
+    opacity: 0;
+}
+
+.iconMenus {
+
+    width: 30px;
+    position: absolute;
+    left: 90%;
+    cursor: pointer;
+    
+}
+
+.iconMenus:hover {
+
+    scale: 1.2;
+
+}
+
+.titleEditField {
+
+    font-weight: 900;
+
+}

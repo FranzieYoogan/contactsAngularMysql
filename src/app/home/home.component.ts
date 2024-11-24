@@ -83,4 +83,16 @@ export class HomeComponent implements OnInit {
 
 }
 
+sendTo(item:any) {
+
+  this.shared.getSpecific(item).subscribe((data) => {
+
+    console.log("sent successfuly", data)
+
+  })
+
+  this.router.navigate(['/edit'])
+
+}
+
 }

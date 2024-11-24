@@ -1,0 +1,67 @@
+<app-header></app-header>
+
+<main class="whole">
+
+    <section>
+
+
+    <div>
+        <h1 class="title">Update Contact</h1>
+       
+    </div>
+
+    <div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis illo sapiente similique labore dignissimos! Vero, sapiente aspernatur nihil tenetur mollitia, voluptates at, accusamus asperiores ad possimus tempora molestias quibusdam tempore.</p>
+
+    </div>
+
+    
+    <form class="allInput" (submit)="edit($event)">
+
+
+        <div  class="divInput">
+
+            <input type="text" class="inputStyle" id="PersonName" placeholder="Person Name" required>
+    
+        </div>
+
+        <div  class="divInput">
+
+            <input type="tel" pattern="[0-9]{4}-[0-9]{4}" class="inputStyle" id="Mobile" placeholder="1111-1111" required>
+     
+        </div>
+
+        <div  class="divInput">
+
+            <input type="email" class="inputStyle" id="Email" placeholder="Email" required>
+        </div>
+
+        <div  class="divInput">
+
+            <input type="text" class="inputStyle" id="url" placeholder="Url" required>
+        </div>
+
+        <div class="divButton">
+
+            <button type="submit" class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Update</button>
+            <button type="button" (click)="cancel()" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Cancel</button>
+    
+        </div>
+
+    </form>
+
+    <div id="divAlert" class="divAlert p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400" role="alert">
+        <span class="font-medium">Success!!</span> Contact updated
+      </div>
+
+      <div id="divError" class="divError mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+        <span class="font-medium">Error!!</span> Contact existent.
+      </div>
+
+  
+
+</section>
+
+</main>
+
